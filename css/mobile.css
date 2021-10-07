@@ -1,0 +1,54 @@
+body {
+  background-image: url('/images/bg-intro-mobile.png');
+  font-size: 15px;
+  padding: 3%;
+  background-color: hsl(0, 100%, 74%);
+}
+input {
+  border-color: hsl(0, 100%, 74%);
+}
+.top { 
+  color: white;
+}
+.top h1 {
+  padding: 0 1.5em;
+}
+.top p {
+  white-space: pre;
+}
+#free-trial1 {
+  width: 100%;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+}
+form {
+  padding: 5%;
+  margin-top: 1em;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid;
+}
+form input {
+  padding: 1em 0 1em 1em;
+  width: 90%;
+}
+form #free-trial2 {
+  width: 98%;
+  padding: 1em;
+  background-color: hsl(154, 59%, 51%);
+}
+form input, form #free-trial2 {
+  margin: .5em;
+  border-radius: 8px;
+}
+form p {
+  padding: 0 2.5em;
+  font-size: 10px;
+  text-align: center;
+}
+a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}

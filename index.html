@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  
+  <link rel="stylesheet" href="css/mobile.css" type="text/css" />
+  
+  <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+
+</head>
+<body>
+  <div>
+  
+  <section class="top">
+
+  <h1 id="me">Learn to code by watching others</h1>
+
+  <p>
+      
+  See how experienced developers solve 
+        problems in real-time. Watching 
+          scripted tutorials is great, but
+  understanding how developers think is
+                          invaluable.
+  </p>
+
+  </section>
+
+  <section id="top-button">
+    
+  <button id="free-trial1" type="submit">Try it free 7 days then <br />$20/mo. thereafter</button>
+  
+  </section>
+  
+  <form onsubmit="alterPage()" id="you" novalidate="" action="" method="post" accept-charset="utf-8" >
+
+  <input placeholder="First Name" required="" type="name" />
+  <input placeholder="Last Name " required="" type="name" />
+  <input placeholder="Email Address" required="" type="email" />
+  <input placeholder="Password" required="" type="password" />  
+
+  <button type="submit" id="free-trial2" >Claim your free trial</button>
+
+ <p> By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+ </p>
+ </form>
+
+ </div>
+ 
+ <script src="javascript/home.js"></script>
+  <script src="./utils.js"></script>
+  
+</body>
+</html>

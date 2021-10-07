@@ -1,0 +1,26 @@
+@media (min-width: 800px) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em;
+    margin: 30% 5%;
+    grid-template-rows: 4em;
+  }
+  .top {
+    padding: 10em 2em 0em;
+    display: grid;
+  }
+  .top h1 {
+    padding: 0em 4em 0em 0em;
+  }
+  .top p {
+    white-space: normal;
+    font-size: 8px;
+  }
+  #top-button {
+    grid-column: 2/3;
+  }
+  form {
+    grid-column: 2/3;
+  }
+}
