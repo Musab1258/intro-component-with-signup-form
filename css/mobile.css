@@ -4,9 +4,6 @@ body {
   padding: 3%;
   background-color: hsl(0, 100%, 74%);
 }
-input {
-  border-color: hsl(0, 100%, 74%);
-}
 .top { 
   color: white;
 }
@@ -31,8 +28,17 @@ form {
   border: 1px solid;
 }
 form input {
+  border: 0.5px solid;
+  outline: none;
   padding: 1em 0 1em 1em;
   width: 90%;
+}
+.error {
+  border-color: black;
+}
+.active {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
 form #free-trial2 {
   width: 98%;
@@ -43,6 +49,9 @@ form input, form #free-trial2 {
   margin: .5em;
   border-radius: 8px;
 }
+div {
+  margin-left: 2em;
+}
 form p {
   padding: 0 2.5em;
   font-size: 10px;
@@ -51,4 +60,8 @@ form p {
 a {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
+}
+a, input:hover {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
