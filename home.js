@@ -1,11 +1,12 @@
 const form  = document.getElementsByTagName('form')[0];
 const name = document.getElementById('name');
-const nameError = document.querySelector('#name + span.error');
+const nameError = document.querySelector('#name + div.error');
 name.addEventListener('input', function (event) {
   
   if (name.validity.valid) {
     nameError.textContent = '';
     nameError.className = 'error';
+    name.className = 'error';
   }else {
     showError();
   }
@@ -25,16 +26,18 @@ function showError() {
     nameError.textContent = `Name should be at least ${ name.minLength } characters; you entered ${ name.value.length }.`;
   }
 
-  nameError.className = 'error active';
+  nameError.className = 'active';
+  name.className = 'active';
 }
 
 const lname = document.getElementById('lname');
-const lnameError = document.querySelector('#lname + span.error');
+const lnameError = document.querySelector('#lname + div.error');
 lname.addEventListener('input', function (event) {
   
   if (lname.validity.valid) {
     lnameError.textContent = '';
     lnameError.className = 'error';
+    lname.className = 'error';
   }else {
     showError1();
   }
@@ -54,16 +57,18 @@ function showError1() {
     lnameError.textContent = `Name should be at least ${ lname.minLength } characters; you entered ${ lname.value.length }.`;
   }
 
-  lnameError.className = 'error active';
+  lnameError.className = 'active';
+  lname.className = 'active';
 }
 
 const email = document.getElementById('mail')
-    const emailError = document.querySelector('#mail + span.error')
+    const emailError = document.querySelector('#mail + div.error')
     
     email.addEventListener('input', function (a) {
         if (email.validity.valid) {
           emailError.textContent = '';
         emailError.className = 'error';
+        email.className = 'active';
         }else {
           showError2()
         }
@@ -82,16 +87,18 @@ const email = document.getElementById('mail')
       }else if (email.validity.tooShorthort) {
           emailError.textContent = `Email needs to be ${ minLength } characters, you have entered ${ password.value.length } characters`;
       }
-      emailError.className = 'error active';
+      emailError.className = 'active';
+      email.className = 'active';
     }
     
     const password = document.getElementById('password')
-  const passwordError = document.querySelector('#password + span.error')
+  const passwordError = document.querySelector('#password + div.error')
   
   password.addEventListener('input', function (event) {
       if (password.validity.valid) {
         passwordError.textContent = '';
         passwordError.className = 'error';
+        password.className = 'error';
       }else {
         showError3();
       }
@@ -111,5 +118,6 @@ const email = document.getElementById('mail')
       }else if (password.validity.tooShort) {
         passwordError.textContent = `Password should be at least ${ password.minLength } characters, you have entered ${ password.value.length } charcters`
       }
-      passwordError.className = 'error active';
+      passwordError.className = 'active';
+      password.className = 'active';
     }
